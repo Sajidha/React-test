@@ -18,7 +18,7 @@ class Map extends Component {
                 {
                     this.state.cities.map((item, index) => {
                         return (
-                            <Marker onClick={this.props.selectCity} key={index} position={{ lat: item.lat, lng: item.lng }} />
+                            <Marker onClick={this.props.selectCity} key={index} position={{ lat: item.lat, lng: item.lng }} label={item.name} />
                         )
                     })
                 }
